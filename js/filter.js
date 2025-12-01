@@ -1,8 +1,7 @@
 import { state } from './state.js';
 
 export function initFilters() {
-  console.log('Initializing filters...');
-  
+    
   const filtersContainer = document.querySelector('.filters');
   
   if (!filtersContainer) {
@@ -37,8 +36,7 @@ export function initFilters() {
 }
 
 function updateFilterCounts() {
-  console.log('Updating filter counts...');
-  
+   
   const filters = document.querySelectorAll('.filters__item');
   
   if (filters.length === 0) {
@@ -53,8 +51,6 @@ function updateFilterCounts() {
     return;
   }
   
-  console.log(`Found ${allCourses.length} total courses`);
-  
   const counts = {
     'all': allCourses.length
   };
@@ -63,8 +59,6 @@ function updateFilterCounts() {
     const category = course.category;
     counts[category] = (counts[category] || 0) + 1;
   });
-  
-  console.log('Category counts:', counts);
   
   filters.forEach(filter => {
     const category = filter.dataset.category;
@@ -76,7 +70,6 @@ function updateFilterCounts() {
     }
     
     const count = counts[category] || 0;
-    console.log(`Setting count for ${category}: ${count}`);
     
     const oldCount = parseInt(countElement.textContent) || 0;
 
@@ -101,6 +94,3 @@ export function updateFilterCountsManually() {
   updateFilterCounts();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM loaded');
-});
