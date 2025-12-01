@@ -1,0 +1,37 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: rgba(154, 156, 165, 1);
+
+        padding: 8px 35px 8px 20px;
+        background: #fff;
+        border-radius: $radius;
+        cursor: pointer;
+        transition: $transition;
+        border: 1px solid transparent;
+
+        &--active {
+            color: $color-border;
+            border-color: $color-border;
+        }
+    }
+
+    &__count {
+        position: absolute;
+        right: 15px;
+        border-radius: 4px;
+        min-width: 24px;
+        font-weight: 900;
+        font-size: 10px;
+        line-height: 150%;
+        text-align: center;
+    }
+}

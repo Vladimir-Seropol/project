@@ -1,0 +1,10 @@
+.cards__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  max-width: calc(3 * 390px + 2 * 30px); 
+  margin: 0 auto; 
+
+  justify-content: center;
+  justify-items: center;
+}

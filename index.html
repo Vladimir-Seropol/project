@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses Catalog</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h6 class="header__text">Enjoy your studying!</h6>
+        <h1 class="header__title">Our online courses</h1>
+        <div class="header__nav">
+          <div class="filters">
+            <button
+              class="filters__item filters__item--active"
+              data-category="all"
+            >
+              All <span class="filters__count">0</span>
+            </button>
+            <button class="filters__item" data-category="Marketing">
+              Marketing <span class="filters__count">0</span>
+            </button>
+            <button class="filters__item" data-category="Management">
+              Management <span class="filters__count">0</span>
+            </button>
+            <button class="filters__item" data-category="HR & Recruting">
+              HR & Recruiting <span class="filters__count">0</span>
+            </button>
+            <button class="filters__item" data-category="Design">
+              Design <span class="filters__count">0</span>
+            </button>
+            <button class="filters__item" data-category="Development">
+              Development <span class="filters__count">0</span>
+            </button>
+          </div>
+
+          <div class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Search course…"
+            />
+          </div>
+        </div>
+      <img class="header__dots" src="./images/dots.png" alt="dots">
+    </header>
+
+      <main class="cards">
+        <div class="cards__grid"></div>
+         <img class="cards__shapes" src="./images/shapes.png" alt="shapes">
+          <img class="cards__shapes1" src="./images/shapes1.png" alt="shapes">
+      </main>
+
+      <!-- Template -->
+      <template id="card-template">
+        <article class="card">
+          <img class="card__image" />
+          <div class="card__content">
+            <button class="card__bnt">
+              <span class="card__category"></span>
+            </button>
+
+            <h3 class="card__title"></h3>
+            <div class="card__meta">
+              <span class="card__price"></span> |
+              <span class="card__author"></span>
+            </div>
+          </div>
+        </article>
+      </template>
+      <div class="cards__load-more">
+        <button class="cards__load-more-btn">
+          <img src="./images/load-more.png" alt="load-more" />
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

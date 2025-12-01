@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0 auto; 
+    padding-inline: clamp(20px, calc(50vw - 600px), 345px);
+}

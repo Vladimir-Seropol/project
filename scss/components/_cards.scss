@@ -1,0 +1,25 @@
+.cards {
+  width: 100%;
+  padding-top: 20px;
+
+  &__shapes{
+    position: absolute;
+    left: 50px;
+    top: 60%;
+  }
+
+   &__shapes1{
+    position: absolute;
+    right: 75px;
+    top: 96%;
+  }
+    
+    &__load-more-btn{
+        display: block;
+        margin: 0 auto;
+        border: none;
+        padding: 80px;
+        background-color: transparent;
+        cursor: pointer
+    }
+}
