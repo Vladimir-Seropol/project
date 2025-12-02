@@ -91,6 +91,9 @@ h1, h2, h3 {
   transition: 0.25s ease;
   border: 1px solid transparent;
 }
+.filters__item:hover {
+  text-decoration: underline;
+}
 .filters__item--active {
   color: rgb(255, 63, 58);
   border-color: rgb(255, 63, 58);
@@ -223,5 +226,13 @@ h1, h2, h3 {
   border: none;
   padding: 80px;
   background-color: transparent;
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+.cards__load-more-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.cards__load-more-btn:active {
+  transform: translateY(0);
 }

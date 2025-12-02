@@ -1,5 +1,5 @@
 import { state } from './state.js';
-import { renderCards } from './render.js';
+import { renderCards, initLoadMore } from './render.js';
 import { initFilters } from './filter.js';
 import { initSearch } from './search.js';
 
@@ -11,6 +11,7 @@ renderCards(state.filtered);
 
 initFilters();
 initSearch();
+initLoadMore();
 
 setTimeout(() => {
   if (typeof updateFilterCountsManually === 'function') {

@@ -26,5 +26,9 @@ export const state = {
     );
 
     this.onUpdate?.(this.filtered);
+  },
+
+    reloadCards() {
+    this.onUpdate?.(this.filtered);
   }
 };
