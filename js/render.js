@@ -15,7 +15,7 @@ export function renderCards(list, animate = false) {
   const categoryColors = {
     "Marketing": "rgba(3, 206, 164, 1)",
     "Management": "rgba(90, 135, 252, 1)",
-    "HR & Recruiting": "rgba(248, 152, 40, 1)",
+    "HR & Recruting": "rgba(248, 152, 40, 1)",
     "Design": "rgba(245, 47, 110, 1)",
     "Development": "rgba(119, 114, 241, 1)"
   };
